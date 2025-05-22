@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Greenlock</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
+
+  :root {
+    --primary-color: #4a90e2;
+    --secondary-color: #f5f7fa;
+    --text-color: #333;
+    --accent-color: #e94e77;
+  }
+
+  body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--secondary-color);
+    color: var(--text-color);
+    overflow-x: hidden;
+  }
+
+  header {
+    background: var(--primary-color);
+    color: white;
+    padding: 4rem 1rem 6rem;
+    text-align: center;
+    position: relative;
+  }
+
+  header h1 {
+    font-weight: 600;
+    font-size: 3rem;
+    margin: 0 0 0.5rem 0;
+  }
+
+  header p {
+    font-weight: 300;
+    font-size: 1.25rem;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  section {
+    max-width: 900px;
+    margin: -4rem auto 4rem;
+    padding: 2rem 1rem 4rem;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+  }
+
+  section.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  section h2 {
+    margin-top: 0;
+    color: var(--primary-color);
+    font-weight: 600;
+    font-size: 2rem;
+  }
+
+  ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+
+  ul li {
+    font-size: 1.1rem;
+    margin-bottom: 0.75rem;
+    position: relative;
+    padding-left: 1.5rem;
+  }
+
+  ul li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    color: var(--accent-color);
+    font-size: 1.5rem;
+    line-height: 1;
+    top: 0;
+  }
+
+  .social-links {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 1rem;
+  }
+
+  .social-links a {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.25rem;
+    border: 2px solid var(--primary-color);
+    padding: 0.5rem 1.25rem;
+    border-radius: 6px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+
+  .social-links a:hover {
+    background-color: var(--primary-color);
+    color: white;
+  }
+
+  footer {
+    text-align: center;
+    padding: 1.5rem 1rem 3rem;
+    color: #666;
+    font-size: 0.9rem;
+  }
+
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Greenlook</h1>
+  <p>Una empresa de Patricio</p>
+</header>
+
+<section class="fade-section">
+  <h2>Greenlook</h2>
+  <p>Greenlook es una empresa independiente ecologista, que tiene como propósito utilizar prendas de vestir que ya no se utilizan para fabricar accesorios de todo tipo, con la intención de poner en práctica el método de las tres "R"</p>
+</section>
+
+<section class="fade-section">
+  <h2>Productos</h2>
+  <ul>
+    <img src="https://scontent.fqro3-1.fna.fbcdn.net/v/t69.46293-2/491636421_1214360490171801_2737766022471755081_n.?_nc_cat=108&ccb=1-7&_nc_sid=942482&_nc_ohc=7YDDKqggfsgQ7kNvwGeq1Tg&_nc_oc=Adn5lXFGyII2trZKYRjiKm_6lZbUA2r9GzJ9IU8OhQYz4-5lOO3tkphFhrIhhOUzN6r1g2Cjag0BYmaSrkPbkhyM&_nc_zt=28&_nc_ht=scontent.fqro3-1.fna&_nc_gid=VYjVIM3S-MqTEDPCKcKdjA&oh=03_Q7cD2QEay02nrUdihlumiAcbedeX9DDhqsV4FqTHX22FgjcWHA&oe=683042D7" width="100" alt="Bolsa">
+    <p style="margin-top:8px; color:#555; font-size:14px;">Bolsa: Es una bolsa reciclada que esta hecha con materiales reciclados(Con la misma ropa pudieron hacerse esta bolsa).</p>
+    <img src="https://scontent.fqro3-1.fna.fbcdn.net/v/t69.46293-2/491635459_1838592663379411_7396429781637171703_n.?_nc_cat=107&ccb=1-7&_nc_sid=942482&_nc_ohc=yM3C0NrJrRQQ7kNvwHRuEz0&_nc_oc=AdkINF3lUV5TWF0YBxaci1ytHHkxfnxCbEKudMiUecl4L46BO1Guje6KXP3Vafh5wRGqktCmB3qW6zE4d5AY-HlL&_nc_zt=28&_nc_ht=scontent.fqro3-1.fna&_nc_gid=S6AmnOA7goKYPGns8wHYUg&oh=03_Q7cD2QHfWVNP9rdY2cJkLzdo4I0A-aJ27S_BR1-14NY_WVakvA&oe=683059D3" width="100" alt="Billetera">
+    <p style="margin-top:8px; color:#555; font-size:14px;">Billetera: Es una billetera eclogíca hecha de materiales reciclados (Con telas recicladas).</p>
+  </ul>
+</section>
+
+<section class="fade-section">
+  <h2>Connect with Me</h2>
+  <div class="social-links">
+    <a href="https://x.com/Patrick_RM547" target="_blank" rel="noopener noreferrer">Twitter</a>
+    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank" rel="noopener noreferrer">GitHub</a>
+  </div>
+</section>
+
+<footer>
+  Por el momento no están a la venta estos productos, únicamente son de exhibición para dar una pequeña muestra de la idea que tenemos sobre nuestro proyecto
+</footer>
+
+<script>
+  // Scroll fade-in animation
+  function revealOnScroll() {
+    const sections = document.querySelectorAll('.fade-section');
+    const triggerBottom = window.innerHeight * 0.85;
+
+    sections.forEach(section => {
+      const sectionTop = section.getBoundingClientRect().top;
+
+      if (sectionTop < triggerBottom) {
+        section.classList.add('visible');
+      } else {
+        section.classList.remove('visible');
+      }
+    });
+  }
+
+  window.addEventListener('scroll', revealOnScroll);
+  window.addEventListener('load', revealOnScroll);
+</script>
+
+</body>
+</html>
+
